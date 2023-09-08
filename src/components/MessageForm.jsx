@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { sendMessage, isTyping } from "react-chat-engine";
-import { sendOutlined, PictureOutlined, SendOutlined } from "@ant-design/icons";
+import { PictureOutlined, SendOutlined } from "@ant-design/icons";
 
 const MessageForm = (props) => {
   const [value, setValue] = useState("");
@@ -44,7 +44,7 @@ const MessageForm = (props) => {
         onChange={handleUpload}
       />
       <button type="submit" className="send-button">
-        <SendOutlined className="send-icon"/>
+        <SendOutlined className="send-icon" />
       </button>
     </form>
   );
